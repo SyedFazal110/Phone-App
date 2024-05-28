@@ -83,8 +83,8 @@ function renderItems (){
         div.innerHTML += `
         <div class="card bg-dark text-light border-light" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${phones[i].brand +' '+ phones[i].model}</h5>
-                <p class="card-text">Rs ${phones[i].price}</p>
+                <h5 class="card-title">${phones[i].brand} ${phones[i].model}</h5>
+                <p class="card-text">Price : ${phones[i].price}</p>
                 <button onclick="addtocart(${i})" class="btn btn-primary">Add to Cart</button>
             </div>
         </div>
