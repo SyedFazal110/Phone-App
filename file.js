@@ -84,6 +84,9 @@ function renderItems (){
         <div class="card bg-dark text-light border-light" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">${phones[i].brand} ${phones[i].model}</h5>
+                <p class="card-text">Ram : ${phones[i].ram}</p>
+                <p class="card-text">Rom: ${phones[i].rom}</p>
+                <p class="card-text">Camera : ${phones[i].camera}</p>
                 <p class="card-text">Price : ${phones[i].price}</p>
                 <button onclick="addtocart(${i})" class="btn btn-primary">Add to Cart</button>
             </div>
