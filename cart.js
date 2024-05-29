@@ -14,7 +14,7 @@ function renderItems (){
             <p>Ram : ${cartItems[i].ram}</p>
             <p>Rom : ${cartItems[i].rom}</p>
             <p>Camera : ${cartItems[i].camera}</p>
-            <h3>Price: ${cartItems[i].price}</h3>
+            <h3>Price: ${cartItems[i].price * cartItems[i].quantity}</h3>
             <p class="card-text mt-3">Quantity : <button class='btn btn-danger rounded' onclick='minusBtn(${i})'>-</button>  ${cartItems[i].quantity}  <button class='btn btn-danger' onclick='plusBtn(${i})'>+</button></p><br/>
             <button class="btn btn-danger" onclick="deleteBtn(${i})">Delete</button>
             </div>`
